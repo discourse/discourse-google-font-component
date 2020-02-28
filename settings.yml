@@ -1,0 +1,63 @@
+fonts:
+  default: ""
+  type: list
+  description: |
+    Add the name of the font(s) you want to use from <a href="https://fonts.google.com" target="_blank">fonts.google.com</a>. Note that font names are CaSe SeNsiTivE!
+    <br/><br/>
+    You can add additional styles and weights (if the font supports them) in the following format (comma separated, no spaces):
+    "Roboto,300,300i,500"
+
+body_font:
+  type: string
+  default: ""
+  description: |
+    The main font used throughout Discourse, must be included in "fonts" setting above.
+
+body_font_weight:
+  default: 400
+  min: 100
+  max: 900
+  description: |
+    Font thickness in the range of 100-900. 400 is normal, 700 is bold
+
+headline_font:
+  type: string
+  default: ""
+  description: |
+    Optional font for headlines, must be included in "fonts" setting above.
+
+headline_font_weight:
+  default: 700
+  min: 100
+  max: 900
+  description: |
+    Font thickness in the range of 100-900. 400 is normal, 700 is bold
+
+monospaced_font:
+  type: string
+  default: ""
+  description: |
+    Optional font for code, must be included in "fonts" setting above.
+
+monospaced_font_weight:
+  default: 400
+  min: 100
+  max: 900
+  description: |
+    Font thickness in the range of 100-900. 400 is normal, 700 is bold
+
+normal_font_size:
+  default: "15px"
+  description: "Default font size for all user, adjusting this will adjust all font sizes proportionately"
+
+smaller_font_size:
+  default: "14px"
+  description: "Selectable in each user's interface preferences"
+
+larger_font_size:
+  default: "17px"
+  description: "Selectable in each user's interface preferences"
+
+largest_font_size:
+  default: "19px"
+  description: "Selectable in each user's interface preferences"
