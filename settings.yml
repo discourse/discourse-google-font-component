@@ -4,7 +4,7 @@ fonts:
   description: |
     Add the name of the font(s) you want to use from <a href="https://fonts.google.com" target="_blank">fonts.google.com</a>. Note that font names are CaSe SeNsiTivE!
     <br/><br/>
-    You can add additional styles and weights (if the font supports them) in the following format (comma separated, no spaces):
+    You can add additional styles and weights in the following format (comma separated, no spaces):
     "Roboto,300,300i,500"
 
 body_font:
@@ -37,7 +37,7 @@ monospaced_font:
   type: string
   default: ""
   description: |
-    Optional font for code, must be included in "fonts" setting above.
+    Optional font for code blocks, must be included in "fonts" setting above.
 
 monospaced_font_weight:
   default: 400
@@ -48,7 +48,7 @@ monospaced_font_weight:
 
 normal_font_size:
   default: "15px"
-  description: "Default font size for all user, adjusting this will adjust all font sizes proportionately"
+  description: "Default font size for all users, adjusting this will adjust all font sizes proportionately"
 
 smaller_font_size:
   default: "14px"
