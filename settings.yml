@@ -5,7 +5,7 @@ fonts:
     Add the name of the font(s) you want to use from <a href="https://fonts.google.com" target="_blank">fonts.google.com</a>. Note that font names are CaSe SeNsiTivE!
     <br/><br/>
     You can add additional styles and weights in the following format (comma separated, no spaces):
-    "Roboto,300,300i,500"
+    "Roboto:300,300i,500"
 
 body_font:
   type: string
