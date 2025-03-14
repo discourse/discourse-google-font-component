@@ -3,9 +3,6 @@ fonts:
   type: list
   description: |
     Add the name of the font(s) you want to use from <a href="https://fonts.google.com" target="_blank">fonts.google.com</a>. Note that font names are CaSe SeNsiTivE!
-    <br/><br/>
-    You can add additional styles and weights in the following format (comma separated, no spaces):
-    "Roboto:300,300i,500"
 
 body_font:
   type: string
@@ -47,11 +44,11 @@ monospaced_font_weight:
     Font thickness in the range of 100-900. 400 is normal, 700 is bold
 
 normal_font_size:
-  default: "15px"
+  default: "16px"
   description: "Default font size for all users, adjusting this will adjust all font sizes proportionately"
 
 smaller_font_size:
-  default: "14px"
+  default: "15px"
   description: "Selectable in each user's interface preferences"
 
 larger_font_size:

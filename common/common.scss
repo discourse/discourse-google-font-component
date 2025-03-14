@@ -1,21 +1,14 @@
+:root {
+  --font-family: #{$body_font};
+  --heading-font-family: #{$headline_font};
+  --base-font-size-smaller: #{$smaller-font-size};
+  --base-font-size: #{$normal-font-size};
+  --base-font-size-larger: #{$larger-font-size};
+  --base-font-size-largest: #{$largest-font-size};
+}
+
 html {
-  font-family: $body_font !important;
-  // The important is needed because we're appending a font-name class to the HTML tag
-  // to apply custom fonts from the wizard
   font-weight: $body_font_weight;
-  font-size: $normal-font-size;
-
-  &.text-size-smaller {
-    font-size: $smaller-font-size;
-  }
-
-  &.text-size-larger {
-    font-size: $larger-font-size;
-  }
-
-  &.text-size-largest {
-    font-size: $largest-font-size;
-  }
 }
 
 h1,
@@ -23,7 +16,6 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $headline_font;
   font-weight: $headline_font_weight;
 }
 
