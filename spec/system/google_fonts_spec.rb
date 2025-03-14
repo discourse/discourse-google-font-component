@@ -13,7 +13,7 @@ RSpec.describe "Google Fonts", type: :system do
   it "loads the correct stylesheets" do
     visit("/")
 
-    # Have to check page HTML because these aren't visible elements 
+    # Have to check page HTML because these aren't visible elements
     expect(page.html).to include('href="https://fonts.googleapis.com')
     expect(page.html).to include("family=Roboto:")
     expect(page.html).to include("family=Open+Sans:")
