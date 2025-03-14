@@ -56,18 +56,18 @@ export default class GoogleFonts extends Component {
   }
 
   getWeightRange(weight) {
-    if (!weight) {
-      return "400;700";
+    const weightNum = parseInt(weight, 10) || 400;
+    const weights = new Set([400, weightNum]);
+
+    weights.add(700);
+
+    if (weightNum < 400) {
+      weights.add(weightNum);
     }
 
-    const weightNum = parseInt(weight, 10);
-    if (weightNum === 400) {
-      return "400;700";
-    }
-
-    return weightNum < 400
-      ? `${weightNum};400;700` // light weight + regular + bold
-      : `400;${weightNum}`; // regular + specified weight
+    return Array.from(weights)
+      .sort((a, b) => a - b)
+      .join(";");
   }
 
   <template>
