@@ -1,4 +1,5 @@
 import Component from "@glimmer/component";
+
 export default class GoogleFonts extends Component {
   get fontLink() {
     const fonts = settings.fonts;
