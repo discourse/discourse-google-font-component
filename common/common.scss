@@ -1,14 +1,23 @@
+// We only want to override these CSS vars if the setting is configured
+// otherwise we end up with blank values that don't fall back correctly
+
+@mixin isConfigured($property, $value) {
+  @if $value and $value != "" {
+    #{$property}: #{$value};
+  }
+}
+
 :root {
-  --font-family: #{$body_font};
-  --heading-font-family: #{$headline_font};
-  --base-font-size-smaller: #{$smaller-font-size};
-  --base-font-size: #{$normal-font-size};
-  --base-font-size-larger: #{$larger-font-size};
-  --base-font-size-largest: #{$largest-font-size};
+  @include isConfigured("--font-family", $body_font);
+  @include isConfigured("--heading-font-family", $headline_font);
+  @include isConfigured("--base-font-size-smaller", $smaller-font-size);
+  @include isConfigured("--base-font-size", $normal-font-size);
+  @include isConfigured("--base-font-size-larger", $larger-font-size);
+  @include isConfigured("--base-font-size-largest", $largest-font-size);
 }
 
 html {
-  font-weight: $body_font_weight;
+  @include isConfigured("font-weight", $body_font_weight);
 }
 
 h1,
@@ -16,7 +25,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: $headline_font_weight;
+  @include isConfigured("font-weight", $headline_font_weight);
 }
 
 pre,
@@ -24,6 +33,6 @@ code,
 kbd,
 samp,
 .modal.history-modal.markdown {
-  font-family: $monospaced_font;
-  font-weight: $monospaced_font_weight;
+  @include isConfigured("font-family", $monospaced_font);
+  @include isConfigured("font-weight", $monospaced_font_weight);
 }
