@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe "Google Fonts", type: :system do
+RSpec.describe "Google Fonts" do
   let!(:theme) { upload_theme_component }
 
   before do
