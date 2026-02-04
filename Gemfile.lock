@@ -22,7 +22,7 @@ GEM
     drb (2.2.3)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
-    json (2.18.0)
+    json (2.18.1)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -38,7 +38,7 @@ GEM
     rack (3.2.4)
     rainbow (3.1.1)
     regexp_parser (2.11.3)
-    rubocop (1.84.0)
+    rubocop (1.84.1)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -102,4 +102,4 @@ DEPENDENCIES
   syntax_tree
 
 BUNDLED WITH
-  4.0.4
+  4.0.5
